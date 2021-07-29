@@ -1,0 +1,123 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+  font-weight: bolder;
+}
+
+i,
+svg {
+  pointer-events: none;
+}
+
+.sequencer {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.snare-tracker,
+.kick-tracker,
+.hihat-tracker,
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls button {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(197, 115, 197);
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+  border: none;
+  transition: all 0.5s ease;
+}
+
+select {
+  width: 110px;
+  height: 50px;
+  margin-left: 10px;
+  border: solid rgb(197, 115, 197) 2px;
+}
+
+.kick-tracker {
+  padding-top: 20px;
+}
+
+.snare-tracker,
+.kick-tracker,
+.hihat-tracker {
+  width: 100%;
+  height: auto;
+  margin-top: 60px;
+}
+
+.kick,
+.hihat,
+.snare {
+  width: 60%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.kick-pad,
+.snare-pad,
+.hihat-pad {
+  width: 90px;
+  height: 90px;
+  cursor: pointer;
+}
+
+.kick-pad {
+  background: rgb(187, 154, 218);
+}
+
+.snare-pad {
+  background: rgb(233, 107, 205);
+}
+
+.hihat-pad {
+  background: rgb(231, 189, 154);
+}
+
+.kick-pad.active {
+  background: rgb(70, 33, 105);
+}
+
+.snare-pad.active {
+  background: rgb(70, 14, 58);
+}
+
+.hihat-pad.active {
+  background: rgb(204, 189, 218);
+}
+
+.pad {
+  transition: all 0.5s ease;
+}
+
+.play {
+  border: none;
+  width: 80px;
+  height: 40px;
+  background-color: rgb(197, 115, 197);
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  margin-top: 30px;
+}
