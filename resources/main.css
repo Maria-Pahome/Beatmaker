@@ -121,3 +121,12 @@ select {
   cursor: pointer;
   margin-top: 30px;
 }
+
+@keyframes playTrack {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
