@@ -1,2 +1,2 @@
-# Beatmaker-project-Exercice
-JS exercice
+# Beatmaker
+JS app
